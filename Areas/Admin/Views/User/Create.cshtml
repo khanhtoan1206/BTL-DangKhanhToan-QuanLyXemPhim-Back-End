@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Thêm nhân viên mới";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary text-white">
+        <h3 class="mb-0 fw-bold">Thêm Tài Khoản Mới</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Họ và tên</label>
+                <input name="fullName" class="form-control" placeholder="Nhập họ tên nhân viên..." required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Email đăng nhập</label>
+                <input name="email" type="email" class="form-control" placeholder="example@gmail.com" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Mật khẩu</label>
+                <input name="password" type="password" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Quyền hạn (Role)</label>
+                <select name="role" class="form-select">
+                    <option value="Admin">Quản trị viên (Admin)</option>
+                    <option value="Customer">Khách hàng (Customer)</option>
+                </select>
+                <small class="text-muted">Lưu ý: Admin có toàn quyền truy cập hệ thống.</small>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-person-plus-fill"></i> Tạo tài khoản
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@model QuanLyXemPhim.Models.Entities.CinemaRoom
+
+@{
+    ViewData["Title"] = "Cập nhật Phòng";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-warning bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-dark py-2">Cập nhật Phòng Chiếu</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="border p-3 mt-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3 row">
+                    <label asp-for="Name" class="col-sm-2 col-form-label fw-bold">Tên Phòng</label>
+                    <div class="col-sm-10">
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label asp-for="NumberOfRows" class="col-sm-2 col-form-label fw-bold">Số Hàng Ghế</label>
+                    <div class="col-sm-10">
+                        <input asp-for="NumberOfRows" class="form-control" type="number" min="1" />
+                        <span asp-validation-for="NumberOfRows" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label asp-for="NumberOfSeatsPerRow" class="col-sm-2 col-form-label fw-bold">Số Ghế/Hàng</label>
+                    <div class="col-sm-10">
+                        <input asp-for="NumberOfSeatsPerRow" class="form-control" type="number" min="1" />
+                        <span asp-validation-for="NumberOfSeatsPerRow" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-warning form-control fw-bold">Lưu thay đổi</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-action="Index" class="btn btn-outline-secondary form-control">Quay lại</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

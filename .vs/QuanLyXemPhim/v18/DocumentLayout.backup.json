@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BTL BACK END\\QuanLyXemPhim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\controllers\\api\\usersapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:controllers\\api\\usersapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\controllers\\api\\ticketsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:controllers\\api\\ticketsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\controllers\\api\\showtimesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:controllers\\api\\showtimesapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\models\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:models\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|d:\\btl back end\\quanlyxemphim\\data\\moviesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6752F7-9444-42AC-B849-08EC462187C1}|QuanLyXemPhim.csproj|solutionrelative:data\\moviesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T01:00:58.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersApiController.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\UsersApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\UsersApiController.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\UsersApiController.cs",
+              "RelativeToolTip": "Controllers\\api\\UsersApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:07:29.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TicketsApiController.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\TicketsApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\TicketsApiController.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\TicketsApiController.cs",
+              "RelativeToolTip": "Controllers\\api\\TicketsApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:03:36.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShowtimesApiController.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\ShowtimesApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\ShowtimesApiController.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\api\\ShowtimesApiController.cs",
+              "RelativeToolTip": "Controllers\\api\\ShowtimesApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:02:50.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:08:58.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:13:10.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Models\\Entities\\Actor.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Actor.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Models\\Entities\\Actor.cs",
+              "RelativeToolTip": "Models\\Entities\\Actor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T17:24:05.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cshtml",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Views\\Booking\\Payment.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Payment.cshtml",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Views\\Booking\\Payment.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Payment.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-15T19:02:59.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T08:55:53.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MoviesDbContext.cs",
+              "DocumentMoniker": "D:\\BTL BACK END\\QuanLyXemPhim\\Data\\MoviesDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\MoviesDbContext.cs",
+              "ToolTip": "D:\\BTL BACK END\\QuanLyXemPhim\\Data\\MoviesDbContext.cs",
+              "RelativeToolTip": "Data\\MoviesDbContext.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwFgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T08:45:05.486Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

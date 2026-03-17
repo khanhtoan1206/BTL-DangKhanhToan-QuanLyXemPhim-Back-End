@@ -1,0 +1,82 @@
+﻿@model QuanLyXemPhim.Models.Entities.Showtime
+@{
+    ViewData["Title"] = "Thanh Toán";
+    string seats = ViewBag.SelectedSeats;
+    decimal price = ViewBag.TotalPrice;
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h4 class="mb-0 fw-bold text-uppercase">Xác nhận thanh toán</h4>
+                </div>
+                <div class="card-body p-5">
+                    <div class="row">
+                        <div class="col-md-6 border-end">
+                            <h5 class="text-primary fw-bold mb-4">Thông tin vé:</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="@Model.Movie?.PosterUrl" class="rounded shadow-sm" style="width: 80px; height: 120px; object-fit: cover;">
+                                <div class="ms-3">
+                                    <h5 class="fw-bold mb-1">@Model.Movie?.Title</h5>
+                                    <p class="text-muted mb-0 small">@Model.Movie?.Duration phút</p>
+                                </div>
+                            </div>
+
+                            <hr class="text-muted my-3">
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Rạp chiếu:</span>
+                                <span class="fw-bold">@Model.CinemaRoom?.Name</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Suất chiếu:</span>
+                                <span class="fw-bold">@Model.StartTime.ToString("HH:mm - dd/MM/yyyy")</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Ghế chọn:</span>
+                                <span class="fw-bold text-success">@seats</span>
+                            </div>
+
+                            <hr class="text-muted my-3">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5">Tổng tiền:</span>
+                                <span class="fs-3 fw-bold text-danger">@price.ToString("N0") đ</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-center ps-md-5">
+                            <h5 class="text-primary fw-bold mb-3">Quét mã QR để trả tiền:</h5>
+
+                            <div class="border p-2 d-inline-block rounded bg-white shadow-sm mb-3">
+
+                                <img src="https://img.vietqr.io/image/TCB-99120688889999-compact2.png?amount=@((int)price)&addInfo=Thanh toan ve @seats&accountName=DANG KHANH TOAN"
+                                     alt="QR Code" class="img-fluid" style="width: 200px;">
+
+                            </div>
+
+                            <p class="small text-muted fst-italic">
+                                Nội dung CK: <strong>Dat ve @seats</strong>
+                            </p>
+
+                            <form asp-action="Create" method="post" class="mt-4">
+                                <input type="hidden" name="showtimeId" value="@Model.Id" />
+                                <input type="hidden" name="selectedSeats" value="@seats" />
+                                <input type="hidden" name="totalPrice" value="@price" />
+
+                                <button type="submit" class="btn btn-success w-100 py-3 fw-bold text-uppercase shadow">
+                                    <i class="bi bi-check-circle-fill"></i> Xác nhận đã chuyển khoản
+                                </button>
+                                <a asp-action="Index" asp-route-showtimeId="@Model.Id" class="btn btn-link text-decoration-none mt-2 text-muted">
+                                    <i class="bi bi-arrow-left"></i> Chọn lại ghế
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

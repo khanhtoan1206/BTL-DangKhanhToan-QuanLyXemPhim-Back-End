@@ -1,0 +1,51 @@
+﻿@model IEnumerable<QuanLyXemPhim.Models.Entities.Showtime>
+
+@{
+    ViewData["Title"] = "Quản lý Lịch chiếu";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-success bg-gradient ml-0 py-3">
+        <h2 class="text-white text-center py-2">Quản lý Lịch chiếu</h2>
+    </div>
+    <div class="card-body p-4">
+        <div class="text-end mb-3">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-calendar-plus"></i> Tạo Lịch Mới
+            </a>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Ngày giờ</th>
+                    <th>Tên Phim</th>
+                    <th>Phòng Chiếu</th>
+                    <th>Giá vé</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">
+                            @item.StartTime.ToString("dd/MM/yyyy HH:mm")
+                        </td>
+                        <td class="text-primary">@item.Movie?.Title</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">@item.CinemaRoom?.Name</span>
+                        </td>
+                        <td>@item.BasePrice.ToString("#,##0") đ</td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"
+                               onclick="return confirm('Bạn có chắc muốn xóa lịch này?');">
+                                <i class="bi bi-trash"></i> Xóa
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

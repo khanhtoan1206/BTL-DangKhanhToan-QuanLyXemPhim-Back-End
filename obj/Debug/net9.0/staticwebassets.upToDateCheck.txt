@@ -1,0 +1,145 @@
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\js\site.js
+wwwroot\images\movies\fecde294-f572-4984-993a-4ba81acd029b.png
+wwwroot\images\movies\f8269ba5-c9ec-4154-aab0-29265b19993e.png
+wwwroot\images\movies\dcfb4417-d6dc-4928-b52d-151c248d5918.jpg
+wwwroot\images\movies\cb39a73d-3482-4957-89e6-1e050cff23b0.jpg
+wwwroot\images\movies\bea21566-0caa-4b21-9179-a7ceb01bcbc1.jpg
+wwwroot\images\movies\b12a921c-15c2-4775-93ca-3df11e6505dd.jpg
+wwwroot\images\movies\aa815cac-d75b-4cc2-93ea-367a9a1a347c.png
+wwwroot\images\movies\7721fcdb-8efb-4aea-a018-140f43c5b388.webp
+wwwroot\images\movies\2a36dc90-4a54-4d12-8f57-d9bd560da6c5.png
+wwwroot\images\movies\2a2b33fa-24fa-45d2-8895-7b92beeecd93.jpg
+wwwroot\images\movies\0cbf9673-f9b0-4bae-a2de-e439b3ef8f01.jpg
+wwwroot\images\movies\00e65702-b4af-4655-be76-41dc04a28655.jpg
+wwwroot\favicon.ico
+wwwroot\css\site.css
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\images\movies\81bcfe79-9e58-4c86-a08b-eaea3e755b69.jpg
+wwwroot\images\movies\ae9ffc35-e86c-467b-9eeb-03980148a081.jpg
+wwwroot\images\movies\8d0c8197-cc29-4127-999b-986910748746.jpg
+wwwroot\images\movies\7d99c44c-0a25-48e2-919e-032a1c03f228.webp
+wwwroot\images\movies\ef683872-ffe0-4ef6-87f5-1ed945bafb80.jpg
+wwwroot\images\movies\8e7d5eb2-8e55-4d42-91c0-a11a6d347b2e.jpg
+wwwroot\images\movies\876aa7fc-8780-4f0f-9808-ee43ea33302c.jpg
+wwwroot\images\movies\e6d97974-9f7b-4c5f-b560-4c7b333593a0.jpg
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\LICENSE.txt
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.min.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery\dist\jquery.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation\LICENSE.md
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\js\site.js
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\favicon.ico
+D:\BTL BACK END\QuanLyXemPhim\wwwroot\css\site.css

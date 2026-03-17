@@ -1,0 +1,61 @@
+﻿@model IEnumerable<QuanLyXemPhim.Models.Entities.CinemaRoom>
+
+@{
+    ViewData["Title"] = "Quản lý Phòng Chiếu";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Danh Sách Phòng Chiếu</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-controller="CinemaRoom" asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Thêm Phòng Mới
+                </a>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Tên Phòng</th>
+                    <th>Số Hàng</th>
+                    <th>Số Ghế/Hàng</th>
+                    <th>Tổng Ghế</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">@item.Name</td>
+                        <td>@item.NumberOfRows</td>
+                        <td>@item.NumberOfSeatsPerRow</td>
+                        <td class="text-primary fw-bold">
+                            @(item.NumberOfRows* item.NumberOfSeatsPerRow)
+                        </td>
+                        <td>
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="CinemaRoom" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning mx-2">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a asp-controller="CinemaRoom" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger mx-2">
+                                    <i class="bi bi-trash-fill"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

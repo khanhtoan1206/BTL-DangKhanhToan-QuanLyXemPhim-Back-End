@@ -1,0 +1,78 @@
+﻿@model IEnumerable<QuanLyXemPhim.Models.Entities.Movie>
+
+@{
+    ViewData["Title"] = "Danh sách Phim";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Quản lý Phim</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Thêm Phim Mới
+                </a>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped table-hover align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th style="width: 100px;">Hình ảnh</th>
+                    <th>Tên phim / Slug</th>
+                    <th>Thể loại</th>
+                    <th>Quốc gia</th>
+                    <th>Ngày chiếu</th>
+                    <th>Thời lượng</th>
+                    <th style="width: 180px;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">
+                            <img src="@item.PosterUrl" class="img-fluid rounded border"
+                                 style="width: 70px; height: 100px; object-fit: cover;" alt="Poster" />
+                        </td>
+                        <td>
+                            <p class="fw-bold text-primary mb-0" style="font-size: 1.1rem;">@item.Title</p>
+
+                            <small class="text-muted fst-italic">
+                                <i class="bi bi-link-45deg"></i> /phim/@item.Slug
+                            </small>
+                        </td>
+                        <td class="text-center">
+                            <span class="badge bg-info text-dark rounded-pill">@item.Category?.Name</span>
+                        </td>
+                        <td class="text-center">@item.Country?.Name</td>
+                        <td class="text-center">@item.ReleaseDate.ToString("dd/MM/yyyy")</td>
+                        <td class="text-center">@item.Duration phút</td>
+                        <td class="text-center">
+                            <div class="btn-group" role="group">
+                                <a href="/phim/@item.Slug" target="_blank" class="btn btn-outline-info btn-sm" title="Xem trên web">
+                                    <i class="bi bi-eye-fill"></i>
+                                </a>
+
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" title="Sửa phim">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" title="Xóa phim">
+                                    <i class="bi bi-trash-fill"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

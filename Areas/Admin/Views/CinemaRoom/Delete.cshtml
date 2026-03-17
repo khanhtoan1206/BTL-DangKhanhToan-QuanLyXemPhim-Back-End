@@ -1,0 +1,59 @@
+﻿@model QuanLyXemPhim.Models.Entities.CinemaRoom
+
+@{
+    ViewData["Title"] = "Xác nhận Xóa";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-danger text-white text-center py-3">
+                    <h4 class="mb-0 fw-bold text-uppercase">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Xác nhận xóa phòng
+                    </h4>
+                </div>
+
+                <div class="card-body p-4">
+                    <p class="text-center text-muted mb-4">
+                        Bạn đang thực hiện xóa phòng chiếu này. Vui lòng kiểm tra kỹ thông tin bên dưới:
+                    </p>
+
+                    <div class="bg-light rounded p-3 mb-4 border border-secondary border-opacity-25">
+                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                            <span class="fw-bold text-secondary">Tên phòng:</span>
+                            <span class="fw-bold text-dark fs-5">@Model.Name</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                            <span class="fw-bold text-secondary">Số hàng ghế:</span>
+                            <span class="text-dark">@Model.NumberOfRows hàng</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold text-secondary">Số ghế mỗi hàng:</span>
+                            <span class="text-dark">@Model.NumberOfSeatsPerRow ghế</span>
+                        </div>
+                        <div class="mt-3 text-end text-primary fst-italic">
+                            <small>Tổng cộng: @(Model.NumberOfRows* Model.NumberOfSeatsPerRow) ghế</small>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-warning text-center" role="alert">
+                        <i class="bi bi-trash3"></i> Bạn có chắc chắn muốn xóa không?
+                    </div>
+
+                    <form asp-action="Delete" class="d-flex gap-3 justify-content-center mt-4">
+                        <input type="hidden" asp-for="Id" />
+
+                        <a asp-action="Index" class="btn btn-secondary w-50 py-2 fw-bold">
+                            <i class="bi bi-x-circle"></i> Không, quay lại
+                        </a>
+
+                        <button type="submit" class="btn btn-danger w-50 py-2 fw-bold">
+                            <i class="bi bi-check-circle"></i> Có, xóa ngay
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

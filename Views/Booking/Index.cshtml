@@ -1,0 +1,260 @@
+﻿@model QuanLyXemPhim.Models.Entities.Showtime
+@{
+    ViewData["Title"] = "Chọn ghế - " + Model.Movie?.Title;
+    var bookedSeats = ViewBag.BookedSeats as List<string> ?? new List<string>();
+}
+
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-uppercase text-primary">@Model.Movie?.Title</h2>
+        <p class="fs-5 text-muted">
+            <i class="bi bi-geo-alt-fill"></i> @Model.CinemaRoom?.Name
+            <span class="mx-2">|</span>
+            <i class="bi bi-clock-history"></i> @Model.StartTime.ToString("HH:mm - dd/MM/yyyy")
+        </p>
+    </div>
+
+    <div class="screen-container mb-5 text-center">
+        <div class="screen mx-auto"></div>
+        <p class="text-muted mt-2 small text-uppercase fw-bold">Màn hình chiếu</p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="seat-map d-flex flex-column align-items-center gap-2">
+
+            @for (char row = 'A'; row <= 'J'; row++)
+            {
+                // CẤU HÌNH LOẠI GHẾ THEO HÀNG
+                string seatType = "standard";
+                decimal price = 75000;
+                int seatCount = 12; // Mặc định 12 ghế/hàng
+
+                if (row >= 'F' && row <= 'I') // Hàng F, G, H, I là VIP
+                {
+                    seatType = "vip";
+                    price = 95000;
+                }
+                else if (row == 'J') // Hàng J là Couple
+                {
+                    seatType = "couple";
+                    price = 190000;
+                    seatCount = 6; // Ghế đôi thì chỉ có 6 cái (to gấp đôi)
+                }
+
+                <div class="d-flex gap-2 align-items-center">
+                    <span class="row-label text-muted fw-bold">@row</span>
+
+                    @for (int col = 1; col <= seatCount; col++)
+                    {
+                        string seatName = $"{row}{col}";
+                        bool isBooked = bookedSeats.Contains(seatName);
+
+                        // Render ghế
+                        <div class="seat @seatType @(isBooked ? "occupied" : "")"
+                             data-seat="@seatName"
+                             data-price="@price"
+                             title="@seatType.ToUpper() - @price.ToString("N0")đ">
+
+                            @if (seatType == "couple")
+                            {
+                                <i class="bi bi-heart-fill small text-white-50"></i>
+                            }
+                            @col
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center gap-4 mt-5 flex-wrap">
+        <div class="d-flex align-items-center gap-2">
+            <div class="seat demo standard"></div> <small>Thường (75k)</small>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <div class="seat demo vip"></div> <small>VIP (95k)</small>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <div class="seat demo couple"></div> <small>Ghế đôi (190k)</small>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <div class="seat demo occupied"></div> <small>Đã bán</small>
+        </div>
+    </div>
+
+    <div class="fixed-bottom bg-white shadow-lg border-top py-3" style="z-index: 1000;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted small">Ghế đang chọn:</p>
+                    <h5 class="fw-bold text-success text-truncate" id="lblSelectedSeats">...</h5>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <p class="mb-0 text-muted small">Tạm tính:</p>
+                    <h4 class="fw-bold text-danger" id="lblTotalPrice">0 đ</h4>
+                </div>
+                <div class="col-md-3">
+                    <form asp-action="Payment" method="post">
+                        <input type="hidden" name="showtimeId" value="@Model.Id" />
+                        <input type="hidden" name="selectedSeats" id="inputSelectedSeats" />
+                        <input type="hidden" name="totalPrice" id="inputTotalPrice" />
+
+                        <button type="submit" id="btnCheckout" class="btn btn-primary w-100 fw-bold py-2 disabled shadow-sm">
+                            ĐẶT VÉ NGAY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Màn hình cong */
+    .screen {
+        height: 40px;
+        width: 60%;
+        background: #ddd;
+        border-radius: 0 0 50% 50%;
+        box-shadow: 0 15px 20px -10px rgba(0,0,0,0.2);
+    }
+
+    /* Ghế chung */
+    .seat {
+        width: 35px;
+        height: 35px;
+        border-radius: 6px 6px 4px 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        position: relative;
+    }
+
+    .row-label {
+        width: 20px;
+        text-align: center;
+    }
+
+    /* 1. Ghế THƯỜNG */
+    .seat.standard {
+        background-color: #e2e8f0;
+        color: #475569;
+        border-bottom: 3px solid #cbd5e1;
+    }
+
+        .seat.standard.selected {
+            background-color: #3b82f6;
+            color: white;
+            border-color: #2563eb;
+        }
+
+    /* 2. Ghế VIP (Vàng Gold) */
+    .seat.vip {
+        background-color: #fef3c7;
+        color: #d97706;
+        border-bottom: 3px solid #fcd34d;
+    }
+
+        .seat.vip.selected {
+            background-color: #f59e0b;
+            color: white;
+            border-color: #d97706;
+            box-shadow: 0 0 10px #fbbf24;
+        }
+
+    /* 3. Ghế COUPLE (Hồng - To gấp đôi) */
+    .seat.couple {
+        width: 78px; /* 35*2 + gap 8 */
+        background-color: #fce7f3;
+        color: #db2777;
+        border-bottom: 3px solid #fbcfe8;
+    }
+
+        .seat.couple.selected {
+            background-color: #ec4899;
+            color: white;
+            border-color: #db2777;
+        }
+
+    /* Ghế Đã bán */
+    .seat.occupied {
+        background-color: #475569;
+        color: #94a3b8;
+        cursor: not-allowed;
+        border-color: #334155;
+    }
+
+    /* Hover hiệu ứng */
+    .seat:hover:not(.occupied) {
+        transform: scale(1.1);
+        z-index: 2;
+    }
+
+    /* Demo chú thích */
+    .seat.demo {
+        width: 25px;
+        height: 25px;
+        cursor: default;
+    }
+
+    body {
+        padding-bottom: 100px;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        const container = document.querySelector('.seat-map');
+        const lblCount = document.getElementById('lblSelectedSeats');
+        const lblTotal = document.getElementById('lblTotalPrice');
+        const inputSeats = document.getElementById('inputSelectedSeats');
+        const inputTotal = document.getElementById('inputTotalPrice');
+        const btnCheckout = document.getElementById('btnCheckout');
+
+        // Sự kiện Click
+        container.addEventListener('click', (e) => {
+            // Check nếu click vào ghế và ghế chưa bán
+            if ((e.target.classList.contains('seat') || e.target.parentElement.classList.contains('seat'))
+                && !e.target.classList.contains('occupied') && !e.target.parentElement.classList.contains('occupied')) {
+
+                // Xử lý click trúng icon trái tim (của ghế đôi) thì chọn parent
+                let seat = e.target.classList.contains('seat') ? e.target : e.target.parentElement;
+
+                seat.classList.toggle('selected');
+                updateSelection();
+            }
+        });
+
+        function updateSelection() {
+            const selectedSeats = document.querySelectorAll('.seat.selected');
+
+            let total = 0;
+            let seatNames = [];
+
+            selectedSeats.forEach(seat => {
+                // Cộng tiền dựa trên giá (data-price) của từng ghế
+                total += parseInt(seat.getAttribute('data-price'));
+                seatNames.push(seat.getAttribute('data-seat'));
+            });
+
+            // Cập nhật giao diện
+            if (seatNames.length > 0) {
+                lblCount.innerText = seatNames.join(', ');
+                lblTotal.innerText = total.toLocaleString('vi-VN') + ' đ';
+
+                inputSeats.value = seatNames.join(',');
+                inputTotal.value = total;
+
+                btnCheckout.classList.remove('disabled');
+            } else {
+                lblCount.innerText = '...';
+                lblTotal.innerText = '0 đ';
+                btnCheckout.classList.add('disabled');
+            }
+        }
+    </script>
+}
